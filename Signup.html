@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Authentication and validation -->
+    <style>
+        body{
+            background-image: url("top-line-management-login-background-1.jpg") ;
+            padding-bottom: 5%;
+            padding-top: 2%;
+        }
+        #div1{
+            opacity:0.85;            
+        }
+        #div2{
+            opacity:0.85;
+            background-color: rgb(211, 132, 245);
+            border-radius: 20px;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-bottom: 5%;
+            padding-top: 2%;
+        }
+    </style>
+    <title>Signup</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <div class="container" id="div1">
+        <h1>
+            Required details
+            <br><br>
+          </h1>
+    </div>
+    <div class="container" id="div2"> 
+    <form class="container-sm" method="POST" action="signup.php">
+
+
+        <div class="form-group">
+            <label for="email" style="font-size: x-large;">Email</label>
+            <input type="text" class="form-control form-control-lg" pattern="(?=.*\d)(?=.*[a-z]).+@gmail.com" id="email" name="email" title="The mail must be a verified google mail" required>
+            <!-- onblur="validateEmail(self);" -->
+        </div>
+        <div class="form-group">
+            <label for="password" style="font-size: x-large;">Password</label>
+            <input type="password" class="form-control form-control-lg" id="password" name="password" required>
+        </div>
+
+
+        <div class="form-group ">
+            <label for="name" style="font-size: x-large;">Full name</label>
+            <input type="text" class="form-control form-control-lg" id="name" pattern="[A-Za-z\s]+" name="name" placeholder="Enter your full name" title="Enter a valid name" required>
+        </div>
+        <div class="form-group ">
+            <label for="userid" style="font-size: x-large;">Student Id</label>
+            <input type="text" class="form-control form-control-lg" id="userid" pattern="\d{7}" name="userid" title="The length of Register number must be 7" placeholder="Register number" required>
+        </div>
+        <div class="form-group ">
+            <label for="cname" style="font-size: x-large;">College name</label>
+            <input type="text" class="form-control form-control-lg" id="cname" name="cname" placeholder="College name" required>
+        </div>
+        <div class="form-group ">
+            <label for="caddr" style="font-size: x-large;">College Address</label>
+            <textarea name="caddr" class="form-control form-control-lg" cols="50" rows="5" placeholder="Full address of college" required></textarea>
+        </div>    
+        <button type="submit" class="btn btn-primary">Add details</button>
+    </form>
+</div>
+</body>
+</html>

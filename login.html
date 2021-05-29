@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .div1{
+            width: 90%;
+            padding-top:15%;
+           align-items:flex-end;
+           padding-right: 10px ;
+           padding-left: 65%;
+           align-self: center;
+        }
+        #div2{
+            background-color: rgb(187, 127, 243) ;
+            opacity: 0.7;
+            visibility: inherit;
+           padding-bottom: 10px;
+            border-radius: 20px;
+            align-self: flex-end;
+            
+        }
+    #div2:hover{
+        background-color: rgb(187, 127, 243) opacity;
+        opacity: 0.85;
+    }
+        #div3{
+            opacity:1;
+        }
+        body{
+            background-image: url("top-line-management-login-background-1.jpg");
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+
+
+
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="div1">
+        <div id="div2">
+            <div class="container">
+                <h3 style="text-align: center;">Login</h3>
+            </div>
+            <form class="container" method="POST" action="view.php">
+                <div id="div3" class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email">
+                </div>
+                <div id="div3" class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <form class="container" action="Signup.html">
+                <p><br></p>
+                <button type="submit" class="btn btn-primary" href="signup.html">Signup</button>
+            </form>
+
+        </div>    
+    </div>
+</body>
+</html>
